@@ -1,0 +1,264 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+
+.container {
+  max-width: 960px;
+}
+
+.icon-link>.bi {
+  width: .75em;
+  height: .75em;
+}
+
+/*
+ * Custom translucent site header
+ */
+.custom-navbar {
+  background-color: rgb(255, 255, 255) !important;
+  max-height: 100px !important;
+  width: 100vw;
+  margin-left: 0px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  max-width: 80px;
+  transition: transform 0.3s ease;
+  /* Adicionando uma transição para suavizar a animação */
+}
+
+#logo:hover {
+  transform: scale(1.2);
+  /* Ajuste o valor conforme necessário para o efeito desejado */
+}
+
+.nav-link {
+  color: #00bcd4;
+  font-weight: bold;
+  text-decoration: none;
+  /* Remova o sublinhado padrão dos links */
+  transition: color 0.3s ease;
+  /* Adicionando uma transição para suavizar a mudança de cor */
+}
+
+.nav-link:hover {
+  color: #007791;
+  /* Cor diferente no hover, ajuste conforme necessário */
+}
+
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #007791;
+  /* Cor de fundo do botão, ajuste conforme necessário */
+  color: #fff;
+  /* Cor do texto do botão, ajuste conforme necessário */
+  cursor: pointer;
+}
+
+/* Estilo para o banner */
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  height: 100vh;
+  width: 100vw;
+  margin-left: 0px;
+}
+
+.banner {
+  background-image: url('../images/facilities-conceito.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.banner-custon {
+  margin: 0px !important;
+  padding: 0px in !important;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  width: 100vw;
+}
+
+.col-md-6 h1 {
+  color: #fcfcfc;
+  margin-bottom: 15px;
+  text-shadow: 4px 4px 4px #00546b;
+}
+
+.col-md-6 h3 {
+  color: #f3f3f3;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* Adicionando algum estilo extra para melhorar a aparência */
+.search-bar input,
+.search-bar button {
+  font-size: 16px;
+  margin-right: -5px;
+}
+
+.search-bar button:hover {
+  background-color: #00546b;
+  /* Cor de fundo do botão no hover, ajuste conforme necessário */
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-bar input:hover {
+  background-color: #e4e4e4;
+}
+
+
+#servicos h1 {
+  margin-bottom: 50px;
+}
+
+#carouselExampleIndicators {
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex !important;
+  width: 80vw;
+  max-height: 70vh;
+  padding: 40px;
+}
+
+.carousel-inner {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.carousel-item {
+  padding: 100px;
+}
+.card {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-left: 10px !important;
+  width: 20px !important; 
+  height: 50vh;
+}
+.card img{
+  max-width: 150px;
+  height: auto;
+  background-size: cover !important;
+  background-position: center !important;
+  overflow: hidden !important;
+}
+
+.card-body a{
+  background-color: #00bcd4 !important;
+  color: #FFF;
+}
+
+.card-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel-indicators button {
+  background-color: black !important;
+  border: 1px solid black !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+  /* Inverte a cor para branco */
+}
+
+
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal>* {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal>* {
+    flex: 1;
+  }
+}
