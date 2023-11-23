@@ -175,22 +175,39 @@ html {
 }
 .card {
   display: flex !important;
+  flex-direction: column; /* Adiciona um layout de coluna para o conteúdo */
   align-items: center;
-  justify-content: space-around;
   text-align: center;
   margin-left: 10px !important;
-  width: 20px !important; 
-  height: 50vh;
+  width: 200px; /* Largura fixa para cada card */
+  height: 300px; /* Altura fixa para cada card */
 }
-.card img{
+
+.card img {
   max-width: 150px;
   height: auto;
   background-size: cover !important;
   background-position: center !important;
   overflow: hidden !important;
+  padding: 20px;
 }
 
-.card-body a{
+.card-body {
+  flex-grow: 1; /* Permite que o conteúdo cresça e ocupe todo o espaço disponível na coluna */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 15px; 
+}
+
+.card-body a {
   background-color: #00bcd4 !important;
   color: #FFF;
 }
@@ -210,6 +227,12 @@ html {
 .carousel-control-next {
   filter: invert(100%);
   /* Inverte a cor para branco */
+}
+
+.section-body h1{
+  color: #000;
+  margin-bottom: 15px;
+  text-shadow: 4px 4px 4px #969696;
 }
 
 
