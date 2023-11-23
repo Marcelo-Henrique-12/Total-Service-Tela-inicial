@@ -15,7 +15,7 @@ html {
 /*
  * Custom translucent site header
  */
-.custom-navbar {
+ .custom-navbar {
   background-color: rgb(255, 255, 255) !important;
   max-height: 100px !important;
   width: 100vw;
@@ -24,35 +24,75 @@ html {
 
 .navbar-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Alinha os itens com espaço entre eles */
   align-items: center;
 }
 
 #logo {
   max-width: 80px;
   transition: transform 0.3s ease;
-  /* Adicionando uma transição para suavizar a animação */
 }
 
 #logo:hover {
-  transform: scale(1.2);
-  /* Ajuste o valor conforme necessário para o efeito desejado */
+  transform: scale(1.1);
 }
 
 .nav-link {
   color: #00bcd4;
   font-weight: bold;
   text-decoration: none;
-  /* Remova o sublinhado padrão dos links */
   transition: color 0.3s ease;
-  /* Adicionando uma transição para suavizar a mudança de cor */
+  transition: transform 0.3s ease;
 }
 
 .nav-link:hover {
   color: #007791;
-  /* Cor diferente no hover, ajuste conforme necessário */
+  transform: scale(1.1);
 }
 
+/* Adicione estilos para os botões customizados */
+
+.custon-button-cadastro{
+  font-weight: bold;
+  color:  #00bcd4 !important;
+  border-color: #00bcd4 !important;
+  transition: transform 0.3s ease;
+}
+
+.custon-button-cadastro:hover{
+  color: #007791 !important;
+  background-color: #fff !important;
+  border-color: #007791 !important;
+  transform: scale(1.1);
+}
+
+.custon-button-entrar{
+  background-color: #00bcd4;
+  border-color: #00bcd4 !important;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.custon-button-entrar:hover{
+  background-color: #007791;
+  border-color: #007791 !important;
+  transform: scale(1.1);
+}
+
+
+.custon-button-cadastro,.custon-button-entrar  {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Estilo extra para ajustar o espaço entre os botões e outros elementos do menu */
+.offcanvas-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .search-bar {
   margin-top: 20px;
@@ -70,9 +110,7 @@ html {
   border: none;
   border-radius: 0 5px 5px 0;
   background-color: #007791;
-  /* Cor de fundo do botão, ajuste conforme necessário */
   color: #fff;
-  /* Cor do texto do botão, ajuste conforme necessário */
   cursor: pointer;
 }
 
@@ -184,8 +222,8 @@ html {
 }
 
 .card img {
-  max-width: 150px;
-  height: auto;
+  width: 150px !important;
+  height: 150px;
   background-size: cover !important;
   background-position: center !important;
   overflow: hidden !important;
@@ -196,7 +234,23 @@ html {
   flex-grow: 1; /* Permite que o conteúdo cresça e ocupe todo o espaço disponível na coluna */
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between; 
+}
+
+.card-body a{
+  width: 100px;
+  background-color: #00bcd4 !important;
+  border-color: #00bcd4 !important;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.card-body a:hover{
+  background-color: #007791 !important;
+  border-color: #007791 !important;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .card-title {
